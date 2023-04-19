@@ -1,0 +1,26 @@
+
+
+//animation totale
+@keyframes list_menu {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+.list_menu.anim1{
+   animation-delay: 500ms;
+    animation:list_menu 500ms;
+  }
+
+  .list_menu.anim2{
+    animation-delay: 500ms;
+    animation:list_menu 1500ms;
+  }
+  .list_menu.anim3{
+    animation-delay: 500ms;
+    animation:list_menu 2500ms;
+  }
+  

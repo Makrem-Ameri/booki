@@ -1,0 +1,231 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500;1,700&family=Shrikhand&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --white:#FFFF;
+  --violet:#9356DC;
+  --purple:#FF79DA;
+  --light-green:#99E2D0;
+}
+//variables
+$color_primaire:#9356DC;
+$color_secondaire:#FF79DA;
+$color_tertiaire:#99E2D0;
+$anim-dur :2000ms;
+$anim-delay:300ms;
+$anim-bloc:100ms;
+.loader 
+{
+  height:100%;
+  width: 100%;
+  position: fixed;
+  display:grid;
+  flex:1;
+  opacity: 0.9;
+  place-items: center;
+  justify-items: center;
+  text-align: center;
+  background:#FFFF;
+  color:#228BA8;
+  z-index:1;
+  inset:0;
+ animation:load 2500ms 1750ms forwards;
+  transform-origin:center;
+     }
+ 
+   @keyframes load {
+  to{
+    transform:scale(0);
+  }
+ 
+}
+header {
+  width:100%;
+  height:auto;
+  background:#FFFF;
+  text-align: center;
+  padding: 1.3rem;
+  padding-left:0;
+  margin:0 auto;
+ position:relative;
+ box-shadow: 0 2px 4px rgb(0, 0, 0,15);
+ nav
+ {
+  position: relative;
+i{
+  position:absolute;
+  left:24px;
+  top:41.7%;
+  width:17.2px;
+  height:16px;
+  color:#353535;
+ }
+ &:hover{
+  i {
+    transform: scale(1.01);
+  }
+ }
+h1 
+{
+ font-size:30px;
+font-weight: 400;
+font-style: italic;
+font-family:'Shrikhand',sans-serif;
+display:grid;
+text-align: center;
+justify-items: center;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+color:#101010;
+text-overflow:ellipsis;
+white-space: nowrap;
+flex-wrap: nowrap;
+overflow: hidden;
+}
+ }
+}
+html{
+  width: 100%;
+  height: auto;
+     }
+body {
+@media (min-width:300px) and (max-width:768px){
+    width:100%;
+    height: auto;
+    background:#FFFFFF;
+    font-family: 'roboto','Shrikhand',sans-serif;
+    overflow-x: hidden;
+}
+    @media (min-width:768px) {
+    width:100%;
+    background:#FFFFFF;
+    font-family:'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+} 
+  
+.logo {
+
+  width:95%;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+ /*footer*/
+footer{
+  @media (min-width:300px) and (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    background:#353535;
+    padding-top: 15px;
+    padding-bottom:15px ;
+    padding-left:25px;
+    
+    
+  }
+ @media (min-width:768px) {
+  background:#353535;
+  width:100%;
+   display: flex;
+   justify-content:end;
+   flex-direction:row-reverse;
+   
+   
+ }
+.footer_lists
+{
+ @media (min-width:300px) and (max-width:768px){
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+ }
+ @media (min-width:768px){
+  width:auto;
+ display: flex;
+ justify-content: flex-end;
+ align-items: baseline;
+ flex-direction: row-reverse;
+ gap: 2rem;
+ margin-right:3rem;
+ }
+ .title_footer{
+  
+    font-family: shrikhand,'sans-serif';
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+      color: #FFFFFF;
+    
+    }
+    ul {
+      @media (min-width:300px) and (max-width:768px)  {
+        display:block;
+        padding-left:0;
+        flex-direction: column;
+        align-items:start;
+      }
+      @media (min-width:768px) {
+      display: flex;
+      flex-direction: row;
+      gap:10px;
+      justify-items: center;
+      }
+      li 
+      {
+      list-style-type:none;
+      color:#FFFFFF;
+      }
+      span 
+      {
+        @media (min-width:300px) and (max-width:768px){
+         width: auto;
+         height: auto;
+     font-family: 'roboto',sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color:#FFFFFF;
+        }
+      @media (min-width:768px) {
+          margin-top: 64px;
+          margin-bottom: 30px;
+          color:#FFFFFF;
+      }
+      }
+      a 
+       {
+          text-decoration: none;
+          color: #FFFFFF;
+       }
+       i 
+       {
+        margin-right:10px;
+        color:#FFFF;
+       }
+     
+}
+}
+}
+//icon barre aside
+.fa-solid.fa-mobile-screen-button 
+{
+  width:13.02px ;
+  height: 19.9px;
+}
+.fa-solid.fa-list 
+{
+  width:16px;
+  height:15.92px;
+}
+.fa-solid.fa-store 
+{
+  width: 18px;
+  height: 17.91px;
+  
+}

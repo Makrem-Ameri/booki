@@ -1,0 +1,207 @@
+
+  /*list restaurants*/
+  .restaurants
+  {
+   width:100%;
+   background:#D2D2D2; 
+   display: inline-block;
+    h2 
+     {
+      @media (min-width:300px) and (max-width:768px) {
+      width: auto;
+      height: auto;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      font-family:'Roboto',sans-serif;
+      padding-top: 2rem;
+      margin-left: 4.55%;
+      text-overflow:ellipsis;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      
+      }
+      @media (min-width:768px) {
+        width: auto;
+        height: auto;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        font-family:'Roboto',sans-serif;
+        padding-top: 2rem;
+        margin-left: 12.5%;
+        text-overflow:ellipsis;
+          white-space: nowrap;
+          flex-wrap: nowrap;
+          overflow: hidden;
+      }
+    }
+       .list_restaurant
+       {
+       @media(min-width:300px) and (max-width:768px) {
+          width:100%;
+           height:auto;
+           display:flex;
+           flex-direction:column;
+           justify-content: center;
+           margin: 0 auto;
+           overflow-x: hidden;
+            margin-bottom:3rem;
+            padding-bottom:1.5rem ;
+           gap:1.5rem;
+           margin-top: 50px;
+        }
+        @media (min-width:768px) {
+       width:95%;
+       height: auto;
+       display:flex;
+       justify-content:center;
+       flex-wrap: wrap;
+       gap:95px;
+       padding: 1.5rem;
+      }
+        .new
+         {
+          position: relative;
+         &::before
+          {
+           content: "Nouveau";
+          position:absolute;
+          right:9px;
+          top:8px;
+          width:80px;
+          height:29px;
+          font-size:14px;
+          background:$color_tertiaire;
+          text-align: center;
+          font-weight: 500;
+          font-family:'roboto',sans-serif;
+          display: grid;
+          align-items: center;
+          color:#008766;
+          box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+          border-radius:2px;
+         }
+         }
+       
+       a 
+       {  
+        @media (min-width:300px) and (max-width:768px) {
+          width:95%;
+          height:auto;
+          background:#FFFFFF; 
+          border:none;
+          border-radius: 30px;
+          margin-bottom: 1rem;
+          text-decoration: none;
+          padding-bottom: 10px;
+          margin:0 auto;
+         @include principal-shadow;
+     }
+       @media (min-width:768px) {
+        width: 35%;
+        height:200px;
+        text-decoration: none;
+         background:#FFFF;
+         display: flex;
+         border:none;
+         border-radius:1rem;
+         text-decoration: none;
+         padding-bottom:20px ;
+         @include principal-shadow;
+       }
+       
+      &:hover{
+        transform:scale(1.01);
+      }
+       .card
+      {
+            width:100%;
+             height:auto;
+             position: relative;
+              border-radius: 16px 16px 0 0 ;
+              object-fit: cover;
+        img 
+        {
+         @media (min-width:300px) and (max-width:768px) {
+          width:100%;
+            height:65%;
+            border:none;
+            border-radius:16px 16px 0 0;
+            object-fit: cover;
+          
+         }
+         
+        width: 100%;
+        height:70%;
+        border: none;
+        border-radius: 16px 16px 0 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        object-fit: cover;
+        background:#FFFFFF;
+         }
+  
+        h3
+        {
+        width:auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'roboto', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+        color:#000;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        .fa-heart {
+          width: 22px;
+          height:21px;
+          color: white;
+          margin-right: 10px;
+          -webkit-text-stroke-width:1px;
+          -webkit-text-stroke-color: grey;
+        }
+          .fa-heart::before {
+            content: "\f004";
+            transition: 1s;
+          }
+            .fa-heart:hover::before{
+            cursor: pointer;
+            -webkit-text-stroke-width: 0px;
+             background:linear-gradient(193.33deg,$color_primaire 11.44%,$color_secondaire 123.93%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+  
+        }
+        
+        }
+    span 
+    {
+     width: auto;
+     height:auto;
+     font-family: 'roboto',sans-serif;    
+     font-size: 17px;
+     font-weight: 300;
+     font-style: normal;
+     margin-left: 10px;
+     color:#000;
+     } 
+  }
+  }
+  } 
+  }
+
+  
+  
